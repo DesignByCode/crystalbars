@@ -29,8 +29,10 @@
 				</div>
 			</div>
 
-			<div class="grid grid-cols-12 my-20">
-				<div class="col-span-8 px-5 py-7 rounded bg-white shadow space-y-5">
+			<div class="grid grid-cols-12 my-20 gap-4">
+				<div class="col-span-12 md:col-span-8 px-5 py-7 flex flex-wrap  items-center rounded bg-white shadow">
+					<div class="space-y-5">
+
 					<h1 class="text-5xl font-bold text-gray-700 tracking-tighter mb-5" >Transparent Burglar Bars</h1>
 					<p>
 						Crystal Bars : For our clear burglar bars we use A- grade polycarbonate that is imported from Europe. The
@@ -40,22 +42,26 @@
 					<p>
 						The burglar bars are totally transparent so you will have an unobstructed view and have the most stylish clear burglar bars that will never rust and will never require any maintenance. Unfortunately with all security systems none of them are 100% intruder proof. Burglar bars are only a deterrent and should keep out your intruder until your security company or police arrive at your house.
 					</p>
+					</div>
 				</div>
-				<div class="col-span-4">
-					<img src="{{ asset('img/stand.jpg') }}" alt="{{ config('app.name') }} stand" class="object-cover rounded
+				<div class="col-span-6 md:col-span-4">
+					<img src="{{ asset('img/stand.jpg') }}" alt="{{ config('app.name') }} stand" class="md:rotate-3 md:scale-110
+					object-cover rounded
 					shadow-xl">
 				</div>
 			</div>
-			<div class="spacer--sm"></div>
-			<div class="row">
-				<div class="md-col-4">
-					<img src="{{ asset('img/van.jpg') }}" alt="{{ config('app.name') }} panel van" class="responsive__image image__shadow">
+			<div class="grid grid-cols-12 my-40 gap-4">
+				<div class="col-span-4">
+					<img src="{{ asset('img/van.jpg') }}" alt="{{ config('app.name') }} panel van" class="w-full rounded
+					shadow-xl border border-gray-100">
 				</div>
-				<div class="md-col-4">
-					<img src="{{ asset('img/bakkie.jpg') }}" alt="{{ config('app.name') }} bakkie" class="responsive__image image__shadow">
+				<div class="col-span-4">
+					<img src="{{ asset('img/bakkie.jpg') }}" alt="{{ config('app.name') }} bakkie" class="w-full rounded
+					shadow-xl border border-gray-100">
 				</div>
-				<div class="md-col-4">
-					<img src="{{ asset('img/trailer.jpg') }}" alt="{{ config('app.name') }} Trailer" class="responsive__image image__shadow">
+				<div class="col-span-4">
+					<img src="{{ asset('img/trailer.jpg') }}" alt="{{ config('app.name') }} Trailer" class="w-full rounded
+					shadow-xl border border-gray-100">
 				</div>
 			</div>
 

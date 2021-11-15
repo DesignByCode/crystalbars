@@ -1,4 +1,4 @@
-<nav class="fixed top-0 left-0 right-0 w-full bg-white shadow" role="navigation">
+<nav class="fixed z-50 top-0 left-0 right-0 w-full bg-white shadow" role="navigation">
 	<div class="max-w-7xl px-4 py-1 flex flex-wrap justify-between items-center mx-auto min-h-[4rem]">
 		<a href="{{route('welcome')}}">
 			<img class="h-20" src="{{ asset('img/logo.svg') }}" alt="Crystal Bars Navigation logo">
