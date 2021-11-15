@@ -1,10 +1,10 @@
-<nav class="fixed z-50 top-0 left-0 right-0 w-full bg-white shadow" role="navigation">
+<nav x-data="{ open: false }" class="fixed z-50 top-0 left-0 right-0 w-full bg-white shadow" role="navigation">
 	<div class="max-w-7xl px-4 py-1 flex flex-wrap justify-between items-center mx-auto min-h-[4rem]">
 		<a href="{{route('welcome')}}">
 			<img class="h-20" src="{{ asset('img/logo.svg') }}" alt="Crystal Bars Navigation logo">
 		</a>
 
-		<button type="button" class="rounded border border-gray-300 shadow text-gray-700 h-10 w-10 flex justify-center
+		<button @click="open = ! open"  type="button" class="rounded border border-gray-300 shadow text-gray-700 h-10 w-10 flex justify-center
 		md:hidden
 		items-center bg-white hover:bg-gray-100">
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -13,8 +13,12 @@
 		</button>
 
 
-		<div class="hidden md:flex flex-end items-center uppercase space-x-2 font-bold text-primary-500">
-			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{ route('welcome')
+		<div :class="{'flex w-full  flex-col': open, 'hidden': ! open}" class="hidden md:flex flex-end md:flex-row
+		items-center
+		uppercase md:space-x-2 space-y-2 md:space-y-0 font-bold text-primary-500">
+			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{
+			route
+			('welcome')
 			}}">HOME</a>
 			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
 			   href="{{route('faq')}}">FAQ</a>
