@@ -17,19 +17,21 @@
 			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{ route('welcome')
 			}}">HOME</a>
 			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="#">FAQ</a>
-{{--			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
-href="#">Gallery</a>--}}
+			{{--			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
+			href="#">Gallery</a>--}}
 			<a class="relative overflow-hidden rounded border border-primary-100 hover:bg-primary
 			hover:text-white px-4
 			py-2" href="{{ route
 			('quote')
 			}}">
+				@if(!request()->is('quote'))
 				<span class="absolute -top-3 left-5 flex h-20 w-20">
 					<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-85"></span>
 					<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
 				</span>
+				@endif
 				FREE QUOTE
-				</a>
+			</a>
 		</div>
 
 	</div>
