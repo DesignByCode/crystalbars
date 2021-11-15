@@ -18,7 +18,9 @@
 			}}">HOME</a>
 			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="#">ABOUT</a>
 			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="#">Gallery</a>
-			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="#">Contact Us</a>
+			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="{{ route('contact')
+			}}">Contact
+				Us</a>
 		</div>
 
 	</div>

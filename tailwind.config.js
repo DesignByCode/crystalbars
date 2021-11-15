@@ -13,9 +13,8 @@ module.exports = {
     extend: {
 
       colors: {
-        primary: '#25a4df',
+        primary: {  DEFAULT: '#26A4DF',  '50': '#EDF8FC',  '100': '#D7EEF9',  '200': '#ABDCF2',  '300': '#7EC9EC',  '400': '#52B7E5',  '500': '#26A4DF',  '600': '#1B85B6',  '700': '#15648A',  '800': '#0E445D',  '900': '#072431'},
         secondary: '#ffc300',
-        light: '#eee',
         dark: '#000814'
       }
     },
@@ -25,6 +24,6 @@ module.exports = {
 };
 
 
-      // fontFamily: {
-      //   sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-      // },
+// fontFamily: {
+//   sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+// },
