@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7893730b3e24702aae4bed0c1463fc44",
+    "content-hash": "a42f10e772e4ea70270542eecb53c12f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1192,6 +1192,64 @@
                 }
             ],
             "time": "2020-06-13T08:05:20+00:00"
+        },
+        {
+            "name": "laravel-validation-rules/phone",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-validation-rules/phone.git",
+                "reference": "57e7e801a14493068f435639104b5e56f000f221"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-validation-rules/phone/zipball/57e7e801a14493068f435639104b5e56f000f221",
+                "reference": "57e7e801a14493068f435639104b5e56f000f221",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.5|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.5|^6.0|^7.0|^8.0",
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.5|^5.0",
+                "phpunit/phpunit": "^6.3|^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LVR\\Phone\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tyler Arbon",
+                    "email": "tylercd100@gmail.com"
+                },
+                {
+                    "name": "Scott Robinson",
+                    "email": "scott@dor.ky",
+                    "homepage": "http://dor.ky"
+                }
+            ],
+            "description": "Validate that a phone number is in the correct format",
+            "homepage": "https://github.com/laravel-validation-rules/phone",
+            "keywords": [
+                "laravel",
+                "phone",
+                "tylercd100",
+                "validator"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-validation-rules/phone/issues",
+                "source": "https://github.com/laravel-validation-rules/phone/tree/1.6.0"
+            },
+            "time": "2021-01-14T09:41:55+00:00"
         },
         {
             "name": "laravel/fortify",

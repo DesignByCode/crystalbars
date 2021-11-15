@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ContactController extends Controller
+class QuoteController extends Controller
 {
 
     public function __invoke(Request $request)
     {
-        return view('contact');
+        return view('quote');
     }
 }

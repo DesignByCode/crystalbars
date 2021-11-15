@@ -13,14 +13,23 @@
 		</button>
 
 
-		<div class="hidden md:flex flex-end items-center uppercase space-x-3 font-bold text-gray-500">
-			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="{{ route('welcome')
+		<div class="hidden md:flex flex-end items-center uppercase space-x-2 font-bold text-primary-500">
+			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{ route('welcome')
 			}}">HOME</a>
-			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="#">ABOUT</a>
-			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="#">Gallery</a>
-			<a class="rounded border border-gray-500 hover:bg-primary hover:text-white px-4 py-2" href="{{ route('contact')
-			}}">Contact
-				Us</a>
+			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="#">FAQ</a>
+{{--			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
+href="#">Gallery</a>--}}
+			<a class="relative overflow-hidden rounded border border-primary-100 hover:bg-primary
+			hover:text-white px-4
+			py-2" href="{{ route
+			('quote')
+			}}">
+				<span class="absolute -top-3 left-5 flex h-20 w-20">
+					<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-85"></span>
+					<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
+				</span>
+				FREE QUOTE
+				</a>
 		</div>
 
 	</div>

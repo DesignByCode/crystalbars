@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', \App\Http\Controllers\WelcomeController::class)->name('welcome');
-Route::get('/contact-us', \App\Http\Controllers\ContactController::class)->name('contact');
+Route::get('/quote', \App\Http\Controllers\QuoteController::class)->name('quote');
+
+Route::post('/quote-send', \App\Http\Controllers\SendQuoteController::class)->name('quote.send');
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');
