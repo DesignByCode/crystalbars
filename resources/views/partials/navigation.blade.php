@@ -16,7 +16,8 @@
 		<div class="hidden md:flex flex-end items-center uppercase space-x-2 font-bold text-primary-500">
 			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{ route('welcome')
 			}}">HOME</a>
-			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="#">FAQ</a>
+			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
+			   href="{{route('faq')}}">FAQ</a>
 			{{--			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
 			href="#">Gallery</a>--}}
 			<a class="relative overflow-hidden rounded border border-primary-100 hover:bg-primary
