@@ -36,27 +36,6 @@
 
 	<section class="w-full pt-32">
 		<div class="max-w-7xl mx-auto px-4">
-			<div class="grid grid-cols-12 gap-4">
-				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
-					<header class="mb-5">
-						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Secure &amp; Strong</h1>
-					</header>
-					<p>Tha transparent bars material is virtually unbreakable and withstand a tremendous amount of force.
-						They are flexible and have a tensile breaking strength of 3000 kg.</p>
-				</div>
-				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
-					<header class="mb-5">
-						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Zero Maintenance</h1>
-					</header>
-					<p> They are UV coated on both sides to prevent them from discolouring in the direct sun. You will have clear burglar bars that will never rust and will never require any maintenance.</p>
-				</div>
-				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
-					<header class="mb-5">
-						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Photos Gallery</h1>
-					</header>
-					<p>With hundreds of home fitted with our product we're done almost all kind of windows. View our photo gallery and see how the clear burglar bars will look on your style window.</p>
-				</div>
-			</div>
 
 			<div class="grid grid-cols-12 my-20 gap-4">
 				<div class="col-span-12 md:col-span-8 px-5 py-7 flex flex-wrap  items-center rounded bg-white shadow">
@@ -79,6 +58,53 @@
 					shadow-xl">
 				</div>
 			</div>
+
+
+
+			<div class="grid grid-cols-12 gap-4">
+				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-primary-500" fill="none"
+							 viewBox="0 0 24
+						24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+</svg>
+					<header class="mb-5">
+						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Secure &amp; Strong</h1>
+					</header>
+					<p>Tha transparent bars material is virtually unbreakable and withstand a tremendous amount of force.
+						They are flexible and have a tensile breaking strength of 3000 kg.</p>
+				</div>
+				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+					</svg>
+					<header class="mb-5">
+						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Zero Maintenance</h1>
+					</header>
+					<p> They are UV coated on both sides to prevent them from discolouring in the direct sun. You will have clear burglar bars that will never rust and will never require any maintenance.</p>
+				</div>
+				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+					</svg>
+					<header class="mb-5">
+						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Photos Gallery</h1>
+					</header>
+					<p>With hundreds of home fitted with our product we're done almost all kind of windows. View our photo gallery and see how the clear burglar bars will look on your style window.</p>
+					<a class="rounded px-5 py-2 bg-primary-500 hover:bg-primary-600 mt-5 inline-block text-white
+					font-semibold
+					tracking-tight text-lg"
+					   href="https://www
+					.facebook
+					.com/www
+					.crystalbars.co.za"
+					   target="_blank"
+					   rel="noreferrer">VIEW ON FACEBOOK</a>
+				</div>
+			</div>
+
+
 			<div class="grid grid-cols-12 my-40 gap-4">
 				<div class="col-span-4">
 					<img src="{{ asset('img/van.jpg') }}" alt="{{ config('app.name') }} panel van" class="w-full rounded

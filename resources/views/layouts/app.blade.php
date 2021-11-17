@@ -26,19 +26,21 @@
 	<!-- Scripts -->
 	<script src="{{ mix('js/app.js') }}" defer></script>
 </head>
-	<body class="font-sans antialiased text-gray-500 ">
-		<!-- Global site tag (gtag) - Google Ads: 964038674 -->
-		<amp-analytics type="gtag" data-credentials="include">
-			<script type="application/json"> { "vars": { "gtag_id": "AW-964038674", "config": { "AW-964038674": { "groups": "default" } } }, "triggers": { } } </script>
-		</amp-analytics>
-		<div class="min-h-screen bg-gray-50">
-		@include('partials.navigation')
-		<!-- Page Content -->
-			<main>
-				{{ $slot }}
-			</main>
-			@include('partials.footer')
-		</div>
+<body class="font-sans antialiased text-gray-700 ">
+	<!-- Global site tag (gtag) - Google Ads: 964038674 -->
+	<amp-analytics type="gtag" data-credentials="include">
+		<script type="application/json"> { "vars": { "gtag_id": "AW-964038674", "config": { "AW-964038674": { "groups": "default" } } }, "triggers": { } } </script>
+	</amp-analytics>
+	<div class="min-h-screen bg-gray-50">
+	@include('partials._navigation')
+	<!-- Page Content -->
+		<main>
+			{{ $slot }}
+		</main>
+		@include('partials._profile')
 
-	</body>
+		@include('partials._footer')
+	</div>
+
+</body>
 </html>

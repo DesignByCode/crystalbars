@@ -3,6 +3,8 @@
 	@section('title', 'FAQ Section ')
 
 
+
+
 	<div class="max-w-3xl mx-auto px-4 py-40">
 		<h1 class="text-5xl font-black text-gray-700 tracking-tight mb-10">Here some of the frequently asked questions
 			.</h1>
