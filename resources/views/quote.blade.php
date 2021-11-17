@@ -1,5 +1,5 @@
 <x-app-layout>
-	<div class="my-40 max-w-7xl mx-auto px-4">
+	<div class="py-40 max-w-7xl mx-auto px-4">
 		<div class="flex flex-col text-center w-full my-12">
 			<h1 class="sm:text-3xl text-2xl md:text-5xl font-bold title-font mb-4 text-gray-700">GET YOUR <span
 					class="font-black text-primary underline italic">FREE</span> QUOTE</h1>
