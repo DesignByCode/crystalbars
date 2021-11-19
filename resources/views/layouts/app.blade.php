@@ -15,16 +15,27 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 	<link rel="stylesheet" href="{{ mix('css/plugins.css') }}">
-	
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4HMEHJJQ6"></script>
+{{--	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4HMEHJJQ6"></script>--}}
+{{--	<script>--}}
+{{--		window.dataLayer = window.dataLayer || [];--}}
+{{--		function gtag(){dataLayer.push(arguments);}--}}
+{{--		gtag('js', new Date());--}}
+
+{{--		gtag('config', 'G-P4HMEHJJQ6');--}}
+{{--	</script>--}}
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75033958-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'G-P4HMEHJJQ6');
+		gtag('config', 'UA-75033958-1');
 	</script>
+
 
 	<!-- Scripts -->
 	<script src="{{ mix('js/app.js') }}" defer></script>
