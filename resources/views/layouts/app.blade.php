@@ -15,15 +15,15 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 	<link rel="stylesheet" href="{{ mix('css/plugins.css') }}">
-
+	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75033958-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4HMEHJJQ6"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-75033958-1');
+		gtag('config', 'G-P4HMEHJJQ6');
 	</script>
 
 	<!-- Scripts -->
@@ -34,6 +34,12 @@
 	<amp-analytics type="gtag" data-credentials="include">
 		<script type="application/json"> { "vars": { "gtag_id": "AW-964038674", "config": { "AW-964038674": { "groups": "default" } } }, "triggers": { } } </script>
 	</amp-analytics>
+
+
+
+
+
+
 	<div class="min-h-screen bg-gray-50">
 	@include('partials._top-nav-banner')
 	@include('partials._navigation')
