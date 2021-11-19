@@ -4,18 +4,18 @@
 	<section class="flex min-h-screen items-center overflow-hidden relative bg-primary">
 
 		<div class="absolute z-10 w-full min-h-full min-w-full flex flex-col justify-evenly pointer-events-none	">
-			<div class="h-[8rem] drop-shadow-2xl w-full backdrop-blur-sm bars
+			<div class="h-[6rem] drop-shadow-2xl w-full backdrop-blur-sm bars
 			block"></div>
-			<div class="h-[8rem] drop-shadow-2xl w-full backdrop-blur-sm bars
+			<div class="h-[6rem] drop-shadow-2xl w-full backdrop-blur-sm bars
 			block"></div>
-			<div class="h-[8rem] drop-shadow-2xl w-full backdrop-blur-sm bars
+			<div class="h-[6rem] drop-shadow-2xl w-full backdrop-blur-sm bars
 			block"></div>
 		</div>
 
 		<video class="absolute w-auto min-w-full min-h-full max-w-none" muted autoplay loop>
 			<source src="{{ asset('video/file.mp4') }}" type="video/mp4">
 		</video>
-		<div class="absolute bg-black opacity-10 inset-0"></div>
+{{--		<div class="absolute bg-black opacity-0 inset-0"></div>--}}
 		<div class="relative z-10 max-w-7xl w-full mx-auto dropshadow px-4 my-52 flex flex-wrap">
 			<div class="w-full md:w-2/3 space-y-5">
 				<h1 class="text-4xl md:text-7xl text-white text-opacity-90  leading-none font-black
@@ -24,9 +24,9 @@
 					HOME AND
 					BUSINESS
 					WITH	THE
-					BEST TRANSPARENT BURGLAR BARS
+					BEST <span class="text-primary-300">TRANSPARENT</span> BURGLAR BARS
 					OUT THERE
-					.</h1>
+					</h1>
 				<a href="{{ route('quote') }}" class="rounded inline-block text-lg tracking-tight font-semibold px-7
 				py-3 text-white bg-primary hover:bg-primary-600 shadow-lg">GET FREE
 					QUOTE</a>
@@ -38,12 +38,13 @@
 		<div class="max-w-7xl mx-auto px-4">
 
 			<div class="grid grid-cols-12 my-20 gap-4">
-				<div class="col-span-12 md:col-span-8 px-5 py-7 flex flex-wrap  items-center rounded bg-white shadow">
+				<div class="col-span-12 md:col-span-8 px-5 py-7 flex flex-wrap  items-center rounded bg-white
+				shadow">
 					<div class="space-y-5">
 
-						<h1 class="text-5xl font-bold text-gray-700 tracking-tighter mb-5" >Transparent Burglar Bars</h1>
+						<h1 class="text-5xl font-bold text-gray-700 tracking-tight mb-5" >Transparent Burglar Bars</h1>
 						<p>
-							Crystal Bars : For our clear burglar bars we use A- grade polycarbonate that is imported from Europe. The
+							For our clear burglar bars we use A-grade polycarbonate that is imported from Europe. The
 							transparent burglar bar is 6 mm in thickness and 35 mm in width. The bars are bevelled on both sides so
 							that there are no sharp edges that could cut you when opening the windows. They are UV coated on both sides to prevent them from discolouring in the direct sun.
 						</p>
@@ -53,9 +54,9 @@
 					</div>
 				</div>
 				<div class="col-span-6 md:col-span-4">
-					<img src="{{ asset('img/stand.jpg') }}" alt="{{ config('app.name') }} stand" class="md:rotate-3 md:scale-110
-					object-cover rounded
-					shadow-xl">
+					<img src="{{ asset('img/stand.jpg') }}" alt="{{ config('app.name') }} stand" class=" md:scale-110
+					object-cover rounded relative z-10
+					shadow-2xl">
 				</div>
 			</div>
 
@@ -64,8 +65,7 @@
 			<div class="grid grid-cols-12 gap-4">
 				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-primary-500" fill="none"
-							 viewBox="0 0 24
-						24" stroke="currentColor">
+							 viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
 </svg>
 					<header class="mb-5">
@@ -105,18 +105,28 @@
 			</div>
 
 
-			<div class="grid grid-cols-12 my-40 gap-4">
+			<div class="grid grid-cols-12 my-40 gap-4 gallery">
 				<div class="col-span-4">
-					<img src="{{ asset('img/van.jpg') }}" alt="{{ config('app.name') }} panel van" class="w-full rounded
-					shadow-xl border border-gray-100">
+					<a href="{{ asset('img/van.jpg') }}">
+
+					<img src="{{ asset('img/van.jpg') }}" alt="{{ config('app.name') }} panel van" class="w-full
+					rounded-md
+					shadow-xl border-4 border-primary-500">
+					</a>
 				</div>
 				<div class="col-span-4">
-					<img src="{{ asset('img/bakkie.jpg') }}" alt="{{ config('app.name') }} bakkie" class="w-full rounded
-					shadow-xl border border-gray-100">
+					<a  href="{{ asset('img/bakkie.jpg') }}">
+					<img src="{{ asset('img/bakkie.jpg') }}" alt="{{ config('app.name') }} bakkie" class="w-full
+					rounded-md
+					shadow-xl border-4 border-primary-500">
+					</a>
 				</div>
 				<div class="col-span-4">
-					<img src="{{ asset('img/trailer.jpg') }}" alt="{{ config('app.name') }} Trailer" class="w-full rounded
-					shadow-xl border border-gray-100">
+					<a href="{{ asset('img/trailer.jpg') }}">
+					<img src="{{ asset('img/trailer.jpg') }}" alt="{{ config('app.name') }} Trailer" class="w-full
+					rounded-md
+					shadow-xl border-4 border-primary-500">
+					</a>
 				</div>
 			</div>
 

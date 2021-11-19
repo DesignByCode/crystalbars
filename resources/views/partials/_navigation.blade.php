@@ -1,6 +1,7 @@
-<nav x-data="{ open: false }" class="fixed z-50 top-0 left-0 right-0 w-full bg-white shadow" role="navigation">
-	<div class="max-w-7xl px-4 py-1 flex flex-wrap justify-between items-center mx-auto min-h-[4rem]">
-		<a href="{{route('welcome')}}">
+<nav x-data="{ open: false }" class="fixed z-50 top-8 left-0 right-0 w-full bg-white drop-shadow text-base"
+	 role="navigation">
+	<div class="max-w-7xl px-4 py-1 flex flex-wrap justify-between items-center mx-auto min-h-[3rem]">
+		<a class="relative top-5 -mt-5" href="{{route('welcome')}}">
 			<img class="h-20" src="{{ asset('img/logo.svg') }}" alt="Crystal Bars Navigation logo">
 		</a>
 
@@ -16,15 +17,15 @@
 		<div :class="{'flex w-full  flex-col': open, 'hidden': ! open}" class="hidden md:flex flex-end md:flex-row
 		items-center
 		uppercase md:space-x-2 space-y-2 md:space-y-0 font-bold text-primary-500">
-			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{
-			route
-			('welcome')
+			<a class="rounded font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{
+			route('welcome')
 			}}">HOME</a>
-			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
+			<a class="rounded font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2"
+			   href="{{route('gallery')}}">GALLERY</a>
+			<a class="rounded  font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2"
 			   href="{{route('faq')}}">FAQ</a>
-			{{--			<a class="rounded border border-transparent hover:bg-primary hover:text-white px-4 py-2"
-			href="#">Gallery</a>--}}
-			<a class="relative overflow-hidden rounded border border-primary-100 hover:bg-primary
+
+			<a class="relative font-semibold overflow-hidden rounded border border-primary-100 hover:bg-primary
 			hover:text-white px-4
 			py-2" href="{{ route
 			('quote')

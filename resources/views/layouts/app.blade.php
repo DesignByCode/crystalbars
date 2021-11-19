@@ -8,10 +8,13 @@
 	<title>{{ config('app.name', 'Laravel') }} | @yield('title', 'Transparent burglar bars in Cape Town')</title>
 
 	<!-- Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ mix('css/app.css') }}">
+	<link rel="stylesheet" href="{{ mix('css/plugins.css') }}">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75033958-1"></script>
@@ -26,12 +29,13 @@
 	<!-- Scripts -->
 	<script src="{{ mix('js/app.js') }}" defer></script>
 </head>
-<body class="font-sans antialiased text-gray-700 ">
+<body class="font-sans antialiased text-gray-700 text-lg ">
 	<!-- Global site tag (gtag) - Google Ads: 964038674 -->
 	<amp-analytics type="gtag" data-credentials="include">
 		<script type="application/json"> { "vars": { "gtag_id": "AW-964038674", "config": { "AW-964038674": { "groups": "default" } } }, "triggers": { } } </script>
 	</amp-analytics>
 	<div class="min-h-screen bg-gray-50">
+	@include('partials._top-nav-banner')
 	@include('partials._navigation')
 	<!-- Page Content -->
 		<main>
