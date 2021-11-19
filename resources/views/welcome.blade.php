@@ -131,12 +131,15 @@
 				</div>
 
 			</div>
+
 			<div class="flex justify-center mt-10 mb-40 text-center">
 				<a class="rounded px-5 py-2 bg-primary-500 hover:bg-primary-600 mt-5 inline-block text-white
 					font-semibold tracking-tight text-lg"
 				   href="{{route('gallery')}}"  rel="noreferrer">VIEW GALLERY</a>
 			</div>
-
+			<div class="max-7xl my-10 px-4mx-auto">
+				<img src="{{asset('img/bars.png')}}" alt="Bars Specs">
+			</div>
 		</div>
 	</section>
 
