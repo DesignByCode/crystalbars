@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+
 use Illuminate\View\View;
 
 class GalleryController extends Controller
@@ -10,6 +10,11 @@ class GalleryController extends Controller
 
     public function __invoke(): View
     {
-        return view('gallery');
+
+		$imagesFolder = public_path('img/examples/*.jpg');
+
+
+
+        return view('gallery', ['images' => glob($imagesFolder)]);
     }
 }

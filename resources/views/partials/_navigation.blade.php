@@ -17,17 +17,21 @@
 		<div :class="{'flex w-full  flex-col': open, 'hidden': ! open}" class="hidden md:flex flex-end md:flex-row
 		items-center
 		uppercase md:space-x-2 space-y-2 md:space-y-0 font-bold text-primary-500">
-			<a class="rounded font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2" href="{{
-			route('welcome')
+			<a @class(['rounded font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2',
+			 'bg-primary text-white' => request()->is('/')])
+			   href="{{	route('welcome')
 			}}">HOME</a>
-			<a class="rounded font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2"
+			<a
+			   @class(['rounded font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2',
+			    'bg-primary text-white' => request()->is('gallery')])
 			   href="{{route('gallery')}}">GALLERY</a>
-			<a class="rounded  font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2"
+			<a @class(['rounded font-semibold border border-transparent hover:bg-primary hover:text-white px-4 py-2',
+			 'bg-primary text-white' => request()->is('faq')])
 			   href="{{route('faq')}}">FAQ</a>
 
-			<a class="relative font-semibold overflow-hidden rounded border border-primary-100 hover:bg-primary
-			hover:text-white px-4
-			py-2" href="{{ route
+			<a @class(['relative font-semibold overflow-hidden rounded border border-primary-100 hover:bg-primary
+			hover:text-white px-4 py-2', 'bg-primary text-white' => request()->is('quote')])
+				href="{{ route
 			('quote')
 			}}">
 				@if(!request()->is('quote'))

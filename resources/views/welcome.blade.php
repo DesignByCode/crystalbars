@@ -15,7 +15,7 @@
 		<video class="absolute w-auto min-w-full min-h-full max-w-none" muted autoplay loop>
 			<source src="{{ asset('video/file.mp4') }}" type="video/mp4">
 		</video>
-{{--		<div class="absolute bg-black opacity-0 inset-0"></div>--}}
+		{{--		<div class="absolute bg-black opacity-0 inset-0"></div>--}}
 		<div class="relative z-10 max-w-7xl w-full mx-auto dropshadow px-4 my-52 flex flex-wrap">
 			<div class="w-full md:w-2/3 space-y-5">
 				<h1 class="text-4xl md:text-7xl text-white text-opacity-90  leading-none font-black
@@ -26,7 +26,7 @@
 					WITH	THE
 					BEST <span class="text-primary-300">TRANSPARENT</span> BURGLAR BARS
 					OUT THERE
-					</h1>
+				</h1>
 				<a href="{{ route('quote') }}" class="rounded inline-block text-lg tracking-tight font-semibold px-7
 				py-3 text-white bg-primary hover:bg-primary-600 shadow-lg">GET FREE
 					QUOTE</a>
@@ -64,10 +64,10 @@
 
 			<div class="grid grid-cols-12 gap-4">
 				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-primary-500" fill="none"
-							 viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-primary-500" fill="none"
+						 viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+					</svg>
 					<header class="mb-5">
 						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Secure &amp; Strong</h1>
 					</header>
@@ -95,39 +95,46 @@
 					<a class="rounded px-5 py-2 bg-primary-500 hover:bg-primary-600 mt-5 inline-block text-white
 					font-semibold
 					tracking-tight text-lg"
-					   href="https://www
-					.facebook
-					.com/www
-					.crystalbars.co.za"
-					   target="_blank"
-					   rel="noreferrer">VIEW ON FACEBOOK</a>
+					   href="{{route('gallery')}}"
+					   rel="noreferrer">VIEW IMAGES</a>
 				</div>
 			</div>
 
 
-			<div class="grid grid-cols-12 my-40 gap-4 gallery">
-				<div class="col-span-4">
+			<div class="grid grid-cols-12 mt-40 gap-4 gallery">
+				<div class="col-span-12 text-center">
+					<h2 class="text-5xl font-bold text-gray-700 tracking-tight mb-10">
+						Have a look at some work we have done.
+					</h2>
+				</div>
+				<div class="col-span-4  md:scale-90">
 					<a href="{{ asset('img/van.jpg') }}">
 
-					<img src="{{ asset('img/van.jpg') }}" alt="{{ config('app.name') }} panel van" class="w-full
+						<img src="{{ asset('img/van.jpg') }}" alt="{{ config('app.name') }} panel van" class="w-full
 					rounded-md
 					shadow-xl border-4 border-primary-500">
 					</a>
 				</div>
-				<div class="col-span-4">
+				<div class="col-span-4  md:scale-110">
 					<a  href="{{ asset('img/bakkie.jpg') }}">
-					<img src="{{ asset('img/bakkie.jpg') }}" alt="{{ config('app.name') }} bakkie" class="w-full
+						<img src="{{ asset('img/bakkie.jpg') }}" alt="{{ config('app.name') }} bakkie" class="w-full
 					rounded-md
 					shadow-xl border-4 border-primary-500">
 					</a>
 				</div>
-				<div class="col-span-4">
+				<div class="col-span-4  md:scale-90">
 					<a href="{{ asset('img/trailer.jpg') }}">
-					<img src="{{ asset('img/trailer.jpg') }}" alt="{{ config('app.name') }} Trailer" class="w-full
+						<img src="{{ asset('img/trailer.jpg') }}" alt="{{ config('app.name') }} Trailer" class="w-full
 					rounded-md
 					shadow-xl border-4 border-primary-500">
 					</a>
 				</div>
+
+			</div>
+			<div class="flex justify-center mt-10 mb-40 text-center">
+				<a class="rounded px-5 py-2 bg-primary-500 hover:bg-primary-600 mt-5 inline-block text-white
+					font-semibold tracking-tight text-lg"
+				   href="{{route('gallery')}}"  rel="noreferrer">VIEW GALLERY</a>
 			</div>
 
 		</div>

@@ -1,4 +1,7 @@
 <x-app-layout>
+
+	@section('title', 'Get your FREE Quote')
+
 	<div class="py-40 max-w-7xl mx-auto px-4">
 		<div class="flex flex-col text-center w-full my-12">
 			<h1 class="sm:text-3xl text-2xl md:text-5xl font-bold title-font mb-4 text-gray-700">GET YOUR <span
@@ -24,7 +27,7 @@
 					@method('POST')
 					<div class="p-2 w-1/2">
 						<div class="relative">
-							<label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+							<label for="name" class="leading-7 text-sm text-gray-600 font-semibold">Name</label>
 							<input type="text" id="name" name="name" value="{{old('name')}}" class="w-full bg-gray-100 bg-opacity-50
 							rounded
 							border
@@ -34,7 +37,7 @@
 @error('name') border-red-500   @enderror
 								">
 							@error('name')
-							<span class="text-red-500 block py-1">
+							<span class="text-red-500 block py-1 text-sm">
 								{{$message}}
 							</span>
 							@enderror
@@ -44,7 +47,7 @@
 
 					<div class="p-2 w-1/2">
 						<div class="relative">
-							<label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+							<label for="email" class="leading-7 text-sm text-gray-600 font-semibold">Email</label>
 							<input type="email" id="email" name="email"
 										 value="{{old('email')}}"
 										 class="w-full bg-gray-100 bg-opacity-50 rounded border
@@ -54,7 +57,7 @@
 @error('email') border-red-500   @enderror
 								">
 							@error('email')
-							<span class="text-red-500 block py-1">
+							<span class="text-red-500 block py-1 text-sm">
 								{{$message}}
 							</span>
 							@enderror
@@ -63,7 +66,7 @@
 
 					<div class="p-2 w-full">
 						<div class="relative">
-							<label for="phone" class="leading-7 text-sm text-gray-600">Phone</label>
+							<label for="phone" class="leading-7 text-sm text-gray-600 font-semibold">Phone</label>
 							<input type="tel" id="phone" name="phone"
 										 value="{{old('phone')}}"
 										 class="w-full bg-gray-100 bg-opacity-50 rounded border
@@ -73,7 +76,7 @@
 @error('phone') border-red-500   @enderror
 								">
 							@error('phone')
-							<span class="text-red-500 block py-1">
+							<span class="text-red-500 block py-1 text-sm">
 								{{$message}}
 							</span>
 							@enderror
@@ -82,14 +85,17 @@
 
 					<div class="p-2 w-full">
 						<div class="relative">
-							<label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+							<label for="message" class="leading-7 text-sm text-gray-600 font-semibold">Message</label>
 							<textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border
-						border-gray-300 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-200 h-32 text-base
-						outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out
+						border-gray-300 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-200
+						min-h-[15rem]
+						 text-base
+						outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200
+						ease-in-out resize-y
 @error('name') border-red-500   @enderror
 								">{{old('message')}}</textarea>
 							@error('message')
-							<span class="text-red-500 block py-1">
+							<span class="text-red-500 block py-1 text-sm">
 								{{$message}}
 							</span>
 							@enderror
@@ -103,9 +109,6 @@
 					</div>
 				</form>
 
-				<div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-					<a href="mailto:info@crystalbars.co.za" class="text-primary-500">info@crystalbars.co.za</a>
-				</div>
 			</div>
 		</div>
 	</div>
