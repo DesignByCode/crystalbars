@@ -20,6 +20,3 @@ Route::get('/gallery', \App\Http\Controllers\GalleryController::class)->name('ga
 
 Route::post('/quote-send', \App\Http\Controllers\SendQuoteController::class)->name('quote.send');
 
-//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//    return view('dashboard');
-//})->name('dashboard');
