@@ -42,12 +42,15 @@
 				shadow">
 					<div class="space-y-5">
 
-						<h1 class="text-5xl font-bold text-gray-700 tracking-tight mb-5" >Transparent Burglar Bars</h1>
+						<h1 class="text-5xl font-bold text-gray-700 tracking-tight mb-5" >See-through burglar bars</h1>
 						<p>
-							For our clear burglar bars, we use A-grade polycarbonate that is imported from Europe. The transparent burglar bar is 6 mm in thickness and 35 mm in width. The bars are beveled on both sides so that there are no sharp edges that could cut you when opening the windows. They are UV coated on both sides to prevent them from discoloring in the direct sun.
+							For our clear burglar bars, we use A-grade polycarbonate that is imported from Europe. The transparent burglar bar is 6 mm thick and 35 mm wide. The bars are beveled on both sides so that there are no sharp edges that could cut you when opening the windows. They are UV protected to prevent them from discolouring in the direct sun.
 						</p>
 						<p>
-							The burglar bars are transparent so you will have an unobstructed view and have the most stylish clear burglar bars that will never rust and will never require any maintenance. Unfortunately with all security systems none of them are 100% intruder proof. Burglar bars are only a deterrent and should keep out your intruder until your security company or police arrive at your house.
+							The burglar bars are transparent so you will have an unobstructed view and have the most stylish clear burglar bars that will never rust and will never require any maintenance. Unfortunately, with all security systems, none of them are 100% intruder proof. Burglar bars are only a deterrent and should keep out your intruder until your security company or police arrive at your house.
+						</p>
+						<p>
+							We serve Cape Town area and surroundings.
 						</p>
 					</div>
 				</div>
@@ -78,7 +81,7 @@
 					<header class="mb-5">
 						<h1 class="text-3xl font-bold tracking-tighter text-gray-700">Zero Maintenance</h1>
 					</header>
-					<p>They are UV coated on both sides to prevent them from discoloring in the direct sun. You will have clear burglar bars that will never rust and will never require any maintenance.</p>
+					<p>They are UV protected to prevent them from discolouring in the direct sun. You will have clear burglar bars that will never rust and will never require any maintenance.</p>
 				</div>
 				<div class="col-span-12 md:col-span-4 bg-white px-5 py-7 rounded shadow">
 					<svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
